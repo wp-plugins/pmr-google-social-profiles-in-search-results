@@ -123,9 +123,9 @@ function pmr_gsp_settings_page() {
 </form>
 </div>
 <div style="width:50%;float:left;">
-<img style="width:100%;margin-bottom:25px;" src="<?php echo plugins_url('/images/results.jpg', __FILE__) ?>" />
+<img style="width:100%;margin-bottom:25px;" src="<?php echo plugins_url('/results.jpg', __FILE__) ?>" />
 <p>This code has been tested with the <a href="https://developers.google.com/structured-data/testing-tool/" target="_blank">Google Structured Data Testing Tool</a></p> 
-<img style="width:100%;margin-top:20px;" src="<?php echo plugins_url('/images/example.jpg', __FILE__) ?>" />
+<img style="width:100%;margin-top:20px;" src="<?php echo plugins_url('/example.jpg', __FILE__) ?>" />
 </div>
 </div>
 <?php } 
