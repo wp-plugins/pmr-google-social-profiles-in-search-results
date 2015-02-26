@@ -43,6 +43,7 @@ function pmr_gsp_options_menu() {
 function register_pmr_gsp_settings() {
 	//register our settings
 	register_setting( 'pmr-gsp-settings', 'pmr_status' );
+	register_setting( 'pmr-gsp-settings', 'pmr_type' );
 	register_setting( 'pmr-gsp-settings', 'pmr_name' );
 	register_setting( 'pmr-gsp-settings', 'pmr_siteurl' );
 	register_setting( 'pmr-gsp-settings', 'pmr_logo' );
@@ -71,6 +72,16 @@ function pmr_gsp_settings_page() {
 			<th scope="row">Enable GSP Plugin</th>
 			<td><input type="checkbox" name="pmr_status" <?php if (get_option('pmr_status') ) { echo "checked"; } ?> /></td>
         </tr>
+        
+        <tr valign="top">
+			<th scope="row">Organization or Person?</th>
+			<td>
+				<select name="pmr_type">
+  					<option value="Organization">Organization</option>
+  					<option value="Person">Person</option>
+				</select>
+			</td>
+        </tr> 
 		
 		<tr valign="top">
 			<th scope="row">Site Name</th>
@@ -140,7 +151,7 @@ function pmr_gsp_addtohead() {
 <script type="application/ld+json">
 	{ 
 		"@context" : "http://schema.org",
-		"@type" : "Organization",
+		"@type" : "<?php echo esc_attr( get_option('pmr_type') ); ?>",
 		"name" : "<?php echo esc_attr( get_option('pmr_name') ); ?>",
 		"url" : "<?php echo esc_attr( get_option('pmr_siteurl') ); ?>",
 		"logo": "<?php echo esc_attr( get_option('pmr_logo') ); ?>",
