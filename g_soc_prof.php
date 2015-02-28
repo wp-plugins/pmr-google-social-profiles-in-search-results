@@ -147,7 +147,7 @@ function pmr_gsp_addtohead() {
 	
 	if (get_option('pmr_status')) {
 	?>
-	
+<!--PMR GSP Profiles-->
 <script type="application/ld+json">
 	{ 
 		"@context" : "http://schema.org",
@@ -165,7 +165,7 @@ function pmr_gsp_addtohead() {
 			] 
 }
 </script>
-	
+<!--End PMR GSP Profiles-->	
 	<?php
 	}
 }
