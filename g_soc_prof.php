@@ -157,10 +157,10 @@ function pmr_gsp_addtohead() {
 		"logo": "<?php echo esc_attr( get_option('pmr_logo') ); ?>",
 		"sameAs" : [ 
 			"https://www.facebook.com/<?php echo esc_attr( get_option('pmr_facebook') ); ?>",
-			"https://twitter.com<?php echo esc_attr( get_option('pmr_twitter') ); ?>",
-			"https://plus.google.com<?php echo esc_attr( get_option('pmr_google') ); ?>",
-			"http://instagram.com<?php echo esc_attr( get_option('pmr_instagram') ); ?>",
-			"https://www.pinterest.com<?php echo esc_attr( get_option('pmr_pinterest') ); ?>/",
+			"https://twitter.com/<?php echo esc_attr( get_option('pmr_twitter') ); ?>",
+			"https://plus.google.com/<?php echo esc_attr( get_option('pmr_google') ); ?>",
+			"http://instagram.com/<?php echo esc_attr( get_option('pmr_instagram') ); ?>",
+			"https://www.pinterest.com/<?php echo esc_attr( get_option('pmr_pinterest') ); ?>/",
 			"https://www.youtube.com/user/<?php echo esc_attr( get_option('pmr_youtube') ); ?>"
 			] 
 }
