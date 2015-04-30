@@ -4,7 +4,7 @@ defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
 Plugin Name: PMR | Google Social Profiles
 Plugin URI: Unknown
 Description: Display your social profiles in Google search results
-Version: 1.1
+Version: 1.2
 Author: Paul Riley
 License: GPL2
 */
